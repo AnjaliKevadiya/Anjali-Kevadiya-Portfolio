@@ -13,7 +13,24 @@
 <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+
+<script type="text/javascript">  
+    (function () {  
+        'use strict';  
+        window.addEventListener('load', function () {  
+            var form = document.getElementById('needs-validation');  
+            form.addEventListener('submit', function (event) {  
+                if (form.checkValidity() === false) {  
+                    event.preventDefault();  
+                    event.stopPropagation();  
+                }  
+                form.classList.add('was-validated');  
+            }, false);  
+        }, false);  
+    })();  
+</script>  
 
 </head>
 <body>
@@ -48,33 +65,44 @@
 <div class="wrapper">
 
     <div class="text-center" style="margin: 100px 0px 50px 0px;">
-        <h6 style="margin: 20px 0px 20px 0px;">Contact me on Social Media</h6>
+        <h5 class="text-success" style="margin: 20px 0px 20px 0px;">Contact me on Social Media</h5>
 
-        <a href="#"><i class="fab fa-github fa-2x text-dark mx-3"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in fa-2x text-primary mx-3"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g fa-2x text-danger mx-3"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
-        <a href="#"><i class="fab fa-facebook-f fa-2x text-primary mx-3"></i></a>
-  
-        <p style="margin: 20px 0px 20px 0px;">Or fill out the form below and i will get back to you ASAP</p>
+        <a href="https://www.linkedin.com/in/anjalikevadiya/"><i class="fab fa-linkedin fa-2x text-secondary mx-3"></i></a>
+        <a href="https://stackoverflow.com/users/10326296/anjali-kevadiya"><i class="fab fa-stack-overflow fa-2x text-secondary mx-3"></i></a>
+        <a href="https://github.com/AnjaliKevadiya"><i class="fab fa-github fa-2x text-secondary mx-3"></i></a>
+        <a href="https://twitter.com/KevadiyaAnjali"><i class="fab fa-twitter fa-2x text-secondary mx-3"></i></a>
+        <a href="mailto:anjalikevadiya5@gmail.com"><i class="fab fa-google-plus fa-2x text-secondary mx-3"></i></a>
+        <a href="https://www.instagram.com/anjlee05/"><i class="fab fa-instagram fa-2x text-secondary mx-3"></i></a>
+        <a href="https://www.facebook.com/dungrani55/"><i class="fab fa-facebook-square fa-2x text-secondary mx-3"></i></a>
+
+        <p class="text-success" style="margin: 20px 0px 20px 0px; opacity: 0.5;">Or fill out the form below and i will get back to you ASAP</p>
 
       </div>
 
-      <!-- <div class="container col-md-6"> -->
-        <form style="margin: 50px 50px 200px 50px;">
+      <div class="container col-md-8">
+        <form id="needs-validation" novalidate style="margin: 50px 50px 200px 50px;">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputFirstname">Firstname</label>
-                <input type="text" class="form-control" id="inputFirstname">
+                <input type="text" class="form-control" id="inputFirstname" required />
+                <div class="invalid-feedback">  
+                    Please enter first name.  
+                </div>  
               </div>
               <div class="form-group col-md-6">
                 <label for="inputLastname">Lastname</label>
-                <input type="text" class="form-control" id="inputLastname">
+                <input type="text" class="form-control" id="inputLastname" required />
+                <div class="invalid-feedback">  
+                    Please enter last name.  
+                </div>  
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail">
+              <input type="email" class="form-control" id="inputEmail" required />
+              <div class="invalid-feedback">  
+                Please provide a valid email.  
+              </div>  
             </div>
             <div class="form-group">
                 <label for="inputSubject">Subject</label>
@@ -82,13 +110,16 @@
               </div>  
             <div class="form-group">
                 <label for="inputMessage">Message</label>
-                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter your message
+                </div>  
             </div>
             <div style="float: right;">
-                <button type="submit" class="btn btn-primary">Send Request</button>
+                <button type="submit" class="btn btn-success">Send Request</button>
             </div>
           </form>    
-      <!-- </div> -->
+      </div>
 </div>
 
 <!-- Footer -->
