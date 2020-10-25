@@ -1,14 +1,15 @@
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0px;
     width: 100%;
     background-color: #02262F;
   }
 
   .app-icon {
+      width: 100%;
       max-height: 200px;
       max-width: 200px;
-      border-radius: 60px;
+      border-radius: 29%;
   }
 
   .wrapper {
@@ -39,7 +40,14 @@ footer {
   @media screen and (max-width: 576px) {
 
     .wrapper {
-        margin: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 200px;
     }  
 
+    .app-icon {
+        width: 100%;
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 29%;
+    }
+  
   }
