@@ -50,4 +50,13 @@ footer {
         border-radius: 29%;
     }
   
+    .item-center {
+        display: block;
+        margin: auto;
+    }
+
+    .btn-success {
+        width: 100%;
+        max-width: 200px;
+    }
   }
