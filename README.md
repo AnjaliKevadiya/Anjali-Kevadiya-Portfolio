@@ -1,16 +1,15 @@
 # My Portfolio
 
-<!-- ## Description
-This is my personal portfolio. -->
+## Description
 
-#### [Website Link](https://anjalikevadiya.github.io/my-portfolio/)
+This is my personal portfolio. It contains sample of my work and my interests/hobbies. I developed this website using HTML, CSS and Bootstrap.
 
-<!-- ## My Contribution
-This project is about refactoring code. I made changes to the html file and coverted html file to semantic html structure. Also refactored all repetative code in css file. 
+#### Check out my [Site](https://anjalikevadiya.github.io/my-portfolio/).
 
-#### [Website Link](https://anjalikevadiya.github.io/CodeRefactor/)
 ---
 
-<img src="./assets/images/Herison.png"/>
+<img src="./Assets/about.png"/>
+<img src="./Assets/portfolio.png"/>
+<img src="./Assets/contact.png"/>
 
---- -->
+---
