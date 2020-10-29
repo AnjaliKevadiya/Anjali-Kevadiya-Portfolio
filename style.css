@@ -6,10 +6,6 @@ footer {
   background-color: #02262f;
 }
 
-/* .footer-margin {
-    height: 90px;
-  }
-   */
 .app-icon {
   width: 100%;
   max-height: 200px;
@@ -60,8 +56,52 @@ footer {
     width: 100%;
     max-width: 200px;
   }
+
+  .img-thumbnail {
+    max-height: 200px;
+    display: block;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: xx-large;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 21px;
+  }
 }
 
-/* @media screen and (max-width: 345px) {
+@media screen and (max-width: 375px) {
+  .wrapper {
+    margin: 12px 12px 12px 12px;
+  }
 
-  } */
+  .fab {
+    max-width: 10px;
+    width: 100%;
+    padding: 0px 22px 0px 0px;
+  }
+
+  h1 {
+    font-size: x-large;
+    padding-top: 15px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-toggler {
+    max-width: 40px;
+    width: 100%;
+  }
+  .navbar-toggler-icon {
+    max-width: 14px;
+    width: 100%;
+  }
+}
