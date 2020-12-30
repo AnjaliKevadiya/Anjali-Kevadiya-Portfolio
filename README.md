@@ -8,8 +8,8 @@ This is my personal portfolio. It contains sample of my work and my interests/ho
 
 ---
 
-<img src="./Assets/about.png"/>
-<img src="./Assets/portfolio.png"/>
-<img src="./Assets/contact.png"/>
+<img src="./assets/images/about.png"/>
+<img src="./assets/images/portfolio.png"/>
+<img src="./assets/images/contact.png"/>
 
 ---
