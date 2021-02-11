@@ -2,7 +2,7 @@
 
 ## Description
 
-My portfolio contains my previous work experience and some of my side projects. And also my interests/hobbies. I developed this website using HTML, CSS and Bootstrap.
+My portfolio with my work experience and some of my side projects i've done. And also my interests/hobbies. I developed this website using HTML, CSS and Bootstrap.
 
 ## [Deployed Link](https://anjalikevadiya.github.io/Anjali-Kevadiya-Portfolio/).
 
